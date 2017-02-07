@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ls.myvideoview">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity android:name=".guide.WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Main2Activity" />
+        <!-- <activity android:name=".Main3Activity" /> -->
+        <activity android:name=".guide.WelcomeGuideActivity" />
+
+        <service
+            android:name=".server.MusicServer"
+            android:exported="true"
+            android:process=":remote" />
+
+        <activity android:name=".guide.GuideActivity" />
+        <!-- <activity android:name=".Main4Activity"></activity> -->
+        <!-- <activity android:name=".stu.Main5Activity"></activity> -->
+        <!--<activity android:name=".setflag.Main6Activity" />-->
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".setflag.Main7Activity" />
+        <activity android:name=".setflag.Main8Activity" />
+        <activity android:name=".setflag.Main9Activity" />
+        <activity android:name=".setflag.Main10Activity"></activity>
+    </application>
+
+</manifest>

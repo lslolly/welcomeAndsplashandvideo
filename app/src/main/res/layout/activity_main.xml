@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:background="@drawable/gm3_splash"
+    android:layout_height="match_parent"
+    tools:context="com.example.ls.myvideoview.MainActivity">
+
+    <com.example.ls.myvideoview.CustomVideoView
+        android:id="@+id/customVV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="跳过"
+        android:layout_marginBottom="56dp" />
+</RelativeLayout>
